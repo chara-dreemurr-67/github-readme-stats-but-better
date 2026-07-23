@@ -1,10 +1,9 @@
 import { Canvas as C, FontLibrary, type CanvasRenderingContext2D } from "skia-canvas";
 import { fileURLToPath } from "url";
-import path from "path";
 
 FontLibrary.use(
     "Consolas",
-    [fileURLToPath(new URL(path.join(".", "asset", "Consolas.ttf"), import.meta.dirname))]
+    [fileURLToPath(new URL("./asset/Consolas.ttf", import.meta.dirname))]
 );
 
 const Clamp = (Number: number, Min: number, Max?: number): number => {
