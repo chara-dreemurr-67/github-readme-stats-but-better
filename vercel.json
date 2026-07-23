@@ -1,0 +1,8 @@
+{
+    "crons": [
+        {
+            "path": "/api/get-stats-image",
+            "schedule": "0 17 * * *"
+        }
+    ]
+}
