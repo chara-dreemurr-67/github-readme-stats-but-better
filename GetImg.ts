@@ -47,7 +47,7 @@ const GetImg = async (Color: number, Opacity: number, Size: number, String: stri
             StartY + Index * Size
         );
     }
-    return await Canvas.toBuffer("png");
+    return await Canvas.toBuffer("svg");
 };
 
 export default GetImg;

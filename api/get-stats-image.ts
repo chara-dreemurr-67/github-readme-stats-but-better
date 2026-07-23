@@ -4,7 +4,7 @@ import Stats from "../Stats.js";
 
 const Handler = async (_Req: VercelRequest, Res: VercelResponse): Promise<void> => {
     const Buffer: Buffer = await GetImg(0, 0, 24, (await Stats()).ToString("L"));
-    Res.setHeader("Content-Type", "image/png")
+    Res.setHeader("Content-Type", "image/svg+xml")
         .setHeader("Cache-Control", "public, max-age=86400, stale-while-revalidate=86400")
         .status(200)
         .send(Buffer)
