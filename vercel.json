@@ -4,10 +4,5 @@
             "path": "/api/get-stats-image",
             "schedule": "0 17 * * *"
         }
-    ],
-    "functions": {
-        "api/get-stats-image.ts": {
-            "includeFiles": "asset/**"
-        }
-    }
+    ]
 }
