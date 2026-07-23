@@ -3,7 +3,7 @@ import { fileURLToPath } from "url";
 
 FontLibrary.use(
     "Consolas",
-    [fileURLToPath(new URL("./asset/Consolas.ttf", import.meta.dirname))]
+    [fileURLToPath(new URL("./asset/Consolas.ttf", import.meta.url))]
 );
 
 const Clamp = (Number: number, Min: number, Max?: number): number => {
